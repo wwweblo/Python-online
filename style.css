@@ -1,0 +1,116 @@
+/* Default dark mode styles */
+body {
+    margin: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(120, 131, 233);
+    color: white;
+    margin: 20px;
+    margin-left: auto;
+    transition: background-color 0.1s;
+}
+
+header button:hover {
+    background-color: rgb(85, 95, 185);
+}
+
+header button:active {
+    background-color: rgb(167, 174, 240);
+}
+
+header h1 {
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(77, 77, 77);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+div span {
+    margin-left: auto;
+    padding: 5px;
+}
+
+div span button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(120, 131, 233);
+    color: white;
+}
+
+div span button:hover {
+    background-color: rgb(85, 95, 185);
+}
+
+div span button:active {
+    background-color: rgb(167, 174, 240);
+}
+
+textarea {
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    color: white;
+}
+
+pre {
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: rgb(240, 240, 240);
+}
+
+body.light-mode header h1 {
+    color: black;
+}
+
+body.light-mode div {
+    background-color: rgb(255, 255, 255);
+}
+
+body.light-mode textarea {
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    color: black;
+}
+
+body.light-mode pre {
+    background-color: rgb(240, 240, 240);
+    color: black
+}
+
+body.light-mode header button,
+body.light-mode div span button {
+    background-color: rgb(154, 193, 245);
+    color: rgb(255, 255, 255);
+}
+
+body.light-mode header button:hover,
+body.light-mode div span button:hover {
+    background-color: rgb(92, 143, 209);
+}
+
+body.light-mode header button:active,
+body.light-mode div span button:active {
+    background-color: rgb(212, 215, 248);
+}
