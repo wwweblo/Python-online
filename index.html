@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device=device-width, initial-scale=1.0">
     <title>🐍Python Online</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
@@ -13,6 +13,7 @@
     <header>
         <h1>Python</h1>
         <button id="toggleTheme">Toggle Theme</button>
+        <button id="modules">Modules</button>
     </header>
 
     <div>
@@ -22,8 +23,28 @@
         </span>
         <textarea id="code">print("Hello, World!")</textarea><br>
 
-        <pre id="output">result</pre>
+        <pre id="output">Hello, World!</pre>
     </div>
+
+    <!-- The Modal -->
+    <div id="moduleModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select Modules</h2>
+            <label><input type="checkbox" value="random"> Random</label><br>
+            <label><input type="checkbox" value="math"> Math</label><br>
+            <label><input type="checkbox" value="numpy"> Numpy</label><br>
+            <label><input type="checkbox" value="pandas"> Pandas</label><br>
+            <label><input type="checkbox" value="scipy"> Scipy</label><br>
+            <label><input type="checkbox" value="matplotlib"> Matplotlib</label><br>
+            <label><input type="checkbox" value="seaborn"> Seaborn</label><br>
+            <label><input type="checkbox" value="scikit-learn"> Scikit-learn</label><br>
+            <label><input type="checkbox" value="statsmodels"> Statsmodels</label><br>
+            <label><input type="checkbox" value="requests"> Requests</label><br>
+            <button id="loadModule">Load Selected Modules</button>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

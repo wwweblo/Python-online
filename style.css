@@ -64,6 +64,7 @@ div span button:active {
 
 textarea {
     background-color: rgb(32, 32, 32);
+    height: 300px;
     border-radius: 5px;
     color: white;
 }
@@ -73,6 +74,70 @@ pre {
     border-radius: 5px;
     padding: 5px;
     color: white;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: rgb(77, 77, 77);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 30%;
+    color: white;
+    box-sizing: border-box;
+}
+
+.modal-content label,
+.modal-content input {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(120, 131, 233);
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    transition: background-color 0.1s;
+}
+
+.modal-content button:hover {
+    background-color: rgb(85, 95, 185);
+}
+
+.modal-content button:active {
+    background-color: rgb(167, 174, 240);
 }
 
 /* Light mode styles */
@@ -96,7 +161,7 @@ body.light-mode textarea {
 
 body.light-mode pre {
     background-color: rgb(240, 240, 240);
-    color: black
+    color: black;
 }
 
 body.light-mode header button,
@@ -113,4 +178,24 @@ body.light-mode div span button:hover {
 body.light-mode header button:active,
 body.light-mode div span button:active {
     background-color: rgb(212, 215, 248);
+}
+
+/* Light mode modal styles */
+body.light-mode .modal-content {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+body.light-mode .modal-content label,
+body.light-mode .modal-content input {
+    color: black;
+}
+
+body.light-mode .close {
+    color: #000;
+}
+
+body.light-mode .close:hover,
+body.light-mode .close:focus {
+    color: #555;
 }
